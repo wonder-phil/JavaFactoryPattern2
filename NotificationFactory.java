@@ -10,8 +10,8 @@ public class NotificationFactory {
             return new EmailNotification();
         case "PUSH":
             return new PushNotification();
-    default:
-        throw new IllegalArgumentException("Unknown channel "+channel);
+        default:
+            throw new IllegalArgumentException("Unknown channel "+channel);
     }
    }
 }
